@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>和而泰【最强大脑挑战】</title>
+	<link rel="stylesheet" href="css/matchgame.css" />
+			
+</head>
+<body>
+	<header>
+		<h1>和而泰【最强大脑挑战】</h1>
+		<h3>寻找地表【手速】+【记忆】最强的男人</h3>
+	</header>
+	
+	<div id="timer">
+		已消耗时间: <span id="elapsed-time">00:00</span>
+	</div>
+	<section id="game">		
+		<div id="cards">			
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div> <!-- .card -->						
+		</div> <!-- #cards -->
+	</section> <!-- #game -->
+	
+	<section id="popup" class="hide">
+		<div id="popup-bg">
+		</div>
+		
+		<div id="popup-box">
+			<div id="mb"></div>
+			<div class="ribbon hide">				
+				<div class="ribbon-body">
+					<span>新纪录</span>
+				</div>			
+				<div class="triangle"></div>	
+			</div>		
+			<div id="popup-box-content">
+				<h1>您赢了!</h1>
+				<p>您的记录:</p>
+				<p><span class='score'></span></p>
+				
+				<p><small>上次记录: <span class='last-score'></span><br>
+				游戏开始时间: <span class='saved-time'>07/13/2017 15:30pm</span></small></p>
+			</div>
+		</div>
+	</section>
+
+<script src="js/jquery-1.6.min.js"></script>
+<script src="js/html5games.matchgame.js"></script>
+</body>
+</html>
