@@ -8,7 +8,22 @@ matchingGame.savingObject.removedCards = [];
 
 matchingGame.savingObject.currentElapsedTime = 0;
 
-matchingGame.deck = ['cardAK', 'cardAK', 'cardAQ', 'cardAQ', 'cardAJ', 'cardAJ', 'cardBK', 'cardBK', 'cardBQ', 'cardBQ', 'cardBJ', 'cardBJ', ];
+var arr0 = ['cardA10', 'cardA10', 'cardAJ', 'cardAJ', 'cardAQ', 'cardAQ', 'cardAK', 'cardAK', 'cardB10', 'cardB10', 'cardBJ', 'cardBJ', ];
+
+var arr1 = ['cardBQ', 'cardBQ', 'cardBK', 'cardBK', 'cardC10', 'cardC10', 'cardCJ', 'cardCJ', 'cardCQ', 'cardCQ', 'cardCK', 'cardCK', ];
+
+var arr2 = ['cardD10', 'cardD10', 'cardDJ', 'cardDJ', 'cardDQ', 'cardDQ', 'cardDK', 'cardDK', 'cardA10', 'cardA10', 'cardC10', 'cardC10', ];
+
+switch (Math.round(Math.random()*10)){
+	case 0:
+		matchingGame.deck = arr0;
+		break;
+	case 1:
+		matchingGame.deck = arr1;
+		break
+	default:
+		matchingGame.deck = arr2;
+}
 
 $(function() {
 	matchingGame.deck.sort(shuffle);
