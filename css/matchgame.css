@@ -202,17 +202,15 @@ a:hover {
 .ribbon.hide {
 	display: none;
 	color:#fff;
-	z-index: 10;
 }
  
 .ribbon {
 	float: left;
 	position: absolute;
-	
 	left: -7px;
-	top: 165px;	
-	
-	z-index: 0;
+	top: 165px;
+
+	z-index: 10;
 
 	font-size: .5em;
 	text-transform: uppercase;

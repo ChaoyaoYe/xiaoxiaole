@@ -145,7 +145,6 @@ function gameover() {
 	$(".last-score").html(minute + ":" + second);
 
 	var savedTime = lastScoreObj.savedTime;
-	$(".saved-time").html(savedTime);
 
 	var currentTime = new Date();
 	var month = currentTime.getMonth() + 1;
